@@ -1,3 +1,3 @@
-def checkout(def repoUrl, def branch) {
-    
+def checkout(Map gitParams) {
+    git branch: gitParams.branch, url: gitParams.repoUrl
 }
