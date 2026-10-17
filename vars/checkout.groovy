@@ -1,3 +1,3 @@
-def checkout(Map gitParams) {
+def call(Map gitParams) {
     git branch: gitParams.branch, url: gitParams.repoUrl
 }
